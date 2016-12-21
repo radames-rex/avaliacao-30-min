@@ -1,0 +1,28 @@
+<md-content class="md-no-momentum">
+  <md-input-container class="md-block">
+    <md-icon md-svg-src="images/icons/search.svg"></md-icon>
+    <input ng-model="search[filter]" type="text" placeholder="{{ 'repositories.search' | translate }}" width="400px">
+  </md-input-container>
+</md-content>
+
+<md-content flex>
+  <md-list>
+    <md-list-item class="md-3-line" ng-repeat="item in repos | filter:ignoreAccents">
+      <img ng-src="{{item.language}}.svg" alt="{{item.language}}" class="md-avatar">
+
+      <div class="md-list-item-text">
+        <h3><md-icon md-svg-icon="images/icons/tag.svg" style="color: #000;" aria-label="Repositorie Icon"></md-icon> {{item.name}}</h3>
+
+        <p>
+          <md-icon md-svg-icon="images/icons/owner.svg" style="color: #000;" aria-label="Owner Icon"></md-icon>
+            {{item.owner}}
+          <md-icon md-svg-icon="images/icons/fork.svg" style="color: #000;" aria-label="Language Icon"></md-icon>
+            {{item.forks}} Fork(s)
+          <md-icon md-svg-icon="images/icons/star.svg" style="color: #000;" aria-label="Language Icon"></md-icon>
+            {{item.stars}} Star(s)
+        </p>
+      </div>
+      <md-divider inset></md-divider>
+    </md-list-item>
+  </md-list>
+</md-content>

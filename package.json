@@ -1,5 +1,5 @@
 {
-  "name": "avaliacao30min",
+  "name": "avaliacao30",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -29,9 +29,9 @@
     "jit-grunt": "^0.9.1",
     "jshint-stylish": "^1.0.0",
     "karma": "^1.3.0",
-    "karma-jasmine": "^1.1.0",
+    "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.2",
-    "phantomjs-prebuilt": "^2.1.14",
+    "phantomjs-prebuilt": "^2.1.13",
     "time-grunt": "^1.0.0"
   },
   "engines": {

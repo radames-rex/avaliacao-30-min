@@ -1,0 +1,13 @@
+{
+	"general" : {
+		"welcome" : "Avaliação em 30 minutos",
+		"back" : "Voltar",
+		"others" : "Outros",
+		"error" : {
+			"request" : "Não foi possível se conectar ao servidor, tente novamente."
+		}
+	},
+  "repositories" : {
+    "search" : "Busque um repositório..."
+  }
+}

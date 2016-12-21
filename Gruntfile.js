@@ -1,4 +1,4 @@
-// Generated on 2016-12-21 using generator-angular 0.15.1
+// Generated on 2016-12-06 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -338,7 +338,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'avaliacao30MinApp',
+          module: 'avaliacao30App',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -387,11 +387,6 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
-        }, {
-          expand: true,
-          cwd: 'bower_components/bootstrap/dist',
-          src: 'fonts/*',
-          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {
