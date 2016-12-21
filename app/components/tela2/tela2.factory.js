@@ -23,6 +23,7 @@
           }
         }
       RequestFactory.post(REQUEST.api.url + REQUEST.api.avaliar, body).then(function(data) {
+        console.log(data);
         data = data.data;
         if (typeof data === 'object') {
           defer.resolve(data);
