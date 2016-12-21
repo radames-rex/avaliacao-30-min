@@ -14,8 +14,15 @@
 
     Tela2Factory.postTela2 = function(name,star,coment) {
       var defer = $q.defer(),
-        params = "avaliacao[nome]="+name+"&avaliacao[estrelas]="+star+"&avaliacao[comentario]="+coment;
-      RequestFactory.post(REQUEST.api.url + REQUEST.api.avaliar, params).then(function(data) {
+        // body = "avaliacao[nome]="+name+"&avaliacao[estrelas]="+star+"&avaliacao[comentario]="+coment;
+        body = {
+          avaliacao :{
+            nome: name,
+            estrelas : star,
+            comentario : coment
+          }
+        }
+      RequestFactory.post(REQUEST.api.url + REQUEST.api.avaliar, body).then(function(data) {
         data = data.data;
         if (typeof data === 'object') {
           defer.resolve(data);

@@ -29,9 +29,10 @@ angular
   })
   .constant('REQUEST', {
     api: {
-      url: 'https://avaliacao-30-minutos.herokuapp.com',
+      url2: 'https://avaliacao-30-minutos.herokuapp.com',
+      url: 'http://10.0.1.79:3000',
       avaliacoes: '/avaliacoes.json',
-      avaliar: '/avaliar'
+      avaliar: '/avaliar?'
     }
   })
   .config(function($stateProvider, $urlRouterProvider, $translateProvider, PATH) {

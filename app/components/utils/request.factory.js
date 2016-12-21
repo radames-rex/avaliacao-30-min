@@ -42,9 +42,17 @@
 			}
 		}
 
-    RequestFactory.post = function(url,params) {
+    RequestFactory.post = function(url,body) {
       if(isOnline()){
-        return $http.post(url,params);
+        return $http({
+                  url: url,
+                  dataType: 'json',
+                  method: 'POST',
+                  data: body,
+                  headers: {
+                      "Content-Type": "application/json"
+                  }
+                });
       }
     }
 
